@@ -1,2 +1,6 @@
-# StudentRecordApp
-StudentAutoApp
+CREATE TABLE Students(
+StudentID INT PRIMARY KEY IDENTITY(1,1),
+StudentName VARCHAR(100),
+Programme VARCHAR(100),
+Email VARCHAR(100)
+);
