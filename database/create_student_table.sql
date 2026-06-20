@@ -1,0 +1,9 @@
+CREATE TABLE Students (
+    StudentID INT IDENTITY(1,1) PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Programme VARCHAR(100),
+    Phone VARCHAR(20),
+    CreatedDate DATETIME DEFAULT GETDATE()
+);
